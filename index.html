@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRODIGY_WD_03 — Tic-Tac-Toe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1><span class="x">Tic</span> Tac <span class="o">Toe</span></h1>
+
+  <!-- SCOREBOARD -->
+  <div class="scoreboard">
+    <div class="score-card">
+      <div class="score-label x">Player X</div>
+      <div class="score-num" id="scoreX">0</div>
+    </div>
+    <div class="score-card">
+      <div class="score-label draw">Draw</div>
+      <div class="score-num" id="scoreDraw">0</div>
+    </div>
+    <div class="score-card">
+      <div class="score-label o">Player O</div>
+      <div class="score-num" id="scoreO">0</div>
+    </div>
+  </div>
+
+  <!-- STATUS -->
+  <p class="status x-turn" id="status">Player X's turn</p>
+
+  <!-- BOARD -->
+  <div class="board" id="board">
+    <div class="cell" onclick="handleClick(0)"></div>
+    <div class="cell" onclick="handleClick(1)"></div>
+    <div class="cell" onclick="handleClick(2)"></div>
+    <div class="cell" onclick="handleClick(3)"></div>
+    <div class="cell" onclick="handleClick(4)"></div>
+    <div class="cell" onclick="handleClick(5)"></div>
+    <div class="cell" onclick="handleClick(6)"></div>
+    <div class="cell" onclick="handleClick(7)"></div>
+    <div class="cell" onclick="handleClick(8)"></div>
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="actions">
+    <button class="btn btn-restart" onclick="restartGame()">New Game</button>
+    <button class="btn btn-reset"   onclick="resetScore()">Reset Score</button>
+  </div>
+
+  <footer>Prodigy InfoTech Internship — Task WD-03</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
